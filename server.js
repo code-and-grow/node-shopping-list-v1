@@ -6,11 +6,8 @@ const morgan = require('morgan');
 // parse JSON data sent in requests to this app
 const bodyParser = require('body-parser');
 
-// we import the ShoppingList model, which we'll
-// interact with in our GET endpoint
-const {ShoppingList} = require('./models');
-// Import Recipes model
-const {Recipes} = require('./models');
+// import the ShoppingList and Recipes model
+const {ShoppingList, Recipes} = require('./models');
 
 const jsonParser = bodyParser.json();
 const app = express();
